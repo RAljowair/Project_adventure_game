@@ -73,13 +73,13 @@ def wardrobe(items):
         
 def window(items):
     print_pause("You go to the window then jumped through it.", 2)
-    print_pause(f"You find {random.randint(1,10)} {animal}s coming to you.", 2)
+    print_pause(f"You find {random.randint(1,10)} of them coming to you.", 2)
     if "flashlight" in items:
         print_pause("You use the flashlight to block them a few seconds.", 2)
         print_pause("Then you have pointed a way to run!!", 2)
         print_pause("You run away never see back.", 2)
         print_pause("And you did it you ran !", 2)
-        print_pause("YOU WIN :) !!")
+        print_pause("YOU WIN :) !!", 2)
     else:
         print_pause("You can’t see a way to run!!.", 2)
         print_pause("They are realy close!!", 2)
@@ -87,7 +87,7 @@ def window(items):
         print_pause("YOU LOSE :( !!", 2)
 
 def full_game():
-    animals = [ "bear", "snack", "lion", "tiger" ]
+    animals = [ "bears", "snacks", "lions", "tigers" ]
     items = []
     animal = random.choice(animals)
     start(animal, items)
